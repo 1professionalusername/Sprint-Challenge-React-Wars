@@ -1,5 +1,15 @@
 import React from 'react';
+import Characters from './components/Characters'
 import './App.css';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  padding-bottom: 10px;
+`;
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,9 +21,19 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+      <Title className="Header">React Wars</Title>
+      <div>
+        <Characters textAlign='center'>Center Aligned</Characters>
+
+      </div>
+    </div >
   );
 }
 
 export default App;
+
+
+
+
+
+
